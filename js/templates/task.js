@@ -1,0 +1,1 @@
+<li id="{{id}}"><input type="checkbox" {{#checked}}selected{{/checked}}/>{{label}}</li>
