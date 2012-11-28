@@ -5,7 +5,6 @@ define([
   'backbone',
   'views/listview' 
 ], function($, _, Backbone, listView){
-
 	// ROUTE FROM URL TO VIEW
 	var Router = Backbone.Router.extend({
 		routes: {
@@ -20,11 +19,9 @@ define([
 		var router = new Router();
 		debugger;
 		router.on("route:start",function(){
-
 			console.log("start");
-			
-			var listView = new listView();
-			listview.render();
+			var list_view = new listView();
+			list_view.render();
 
 			
 		});

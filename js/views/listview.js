@@ -7,10 +7,10 @@ define([
   'collections/tasks',
    'text!templates/task.js'
 ], function($, _, Backbone, Task, Tasks, liTemplate){
-
 	var listView = Backbone.View.extend({
 		el : $("#list"),
 		render : function(){
+
 
 			var task1 = new Task({label : "Task1" , checked : true, pos : "1"});
 			var task2 = new Task({label : "Task2" , pos : "2"});
@@ -25,5 +25,4 @@ define([
 		}
 	});
 	return listView;
-
 });
