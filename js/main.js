@@ -1,7 +1,19 @@
 require.config({
-	path:{
-		jquery : 'js/libs/jquery/jquer-min',
-		require : 'js/libs/underscore/underscore-min',
-		backbone : 'js/libs/backbone/backbone'
+	paths:{
+		jquery : 'libs/jquery/jquery-min',
+		underscore : 'libs/underscore/underscore-min',
+		backbone : 'libs/backbone/backbone',
+		icanhaz: 'libs/icanhaz/ICanHaz'
 	}
-})
+});
+
+require([
+  // Load our app module and pass it to our definition function
+  'app'
+
+], function(App){
+
+  // The "app" dependency is passed in as "App"
+  // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
+  App.initialize();
+});
